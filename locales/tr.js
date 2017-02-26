@@ -1,16 +1,14 @@
 {
-	"Hello": "Selam Turkce AAAA",
-	"master.CustomerFeatures": "master.CustomerFeatures",
-	"master.CustomerList": "master.CustomerList",
-	"master.WalletBalance": "master.WalletBalance",
-	"master.CardFeatures": "master.CardFeatures",
-	"master.FormatCard": "master.FormatCard",
-	"master.CreateRoomCard": "master.CreateRoomCard",
-	"master.PersonalFeatures": "master.PersonalFeatures",
-	"master.PersonalList": "master.PersonalList",
-	"master.BarFeatures": "master.BarFeatures",
-	"master.Products": "master.Products",
-	"master.Logout": "master.Logout",
-	"master.Dashboard": "master.Dashboard",
-	"index.Visits": "index.Visits"
+	"master.InventoryTracking": "Stok Takibi",
+	"master.Logout": "Sistemden Çık",
+	"master.Dashboard": "Anasayfa",
+	"master.Stores": "Mağazalar",
+	"master.Personals": "Personel",
+	"master.ProductTree": "Ürün Ağacı",
+	"master.Inventory": "Stok",
+	"master.Sales": "Satışlar",
+	"index.DailyOrders": "Günlük Siparişler",
+	"index.TurkishLira": "TL",
+	"index.DailySales": "Günlük Satışlar",
+	"index.MontlySales": "Aylık Satışlar"
 }

@@ -10,7 +10,7 @@ html(lang='en')
   // BEGIN HEAD
   head
     meta(charset='utf-8')
-    title Metronic Admin Theme #1 | Admin Dashboard
+    title #{ __('master.InventoryTracking')}
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(content='width=device-width, initial-scale=1', name='viewport')
     meta(content='Preview page of Metronic Admin Theme #1 for statistics, charts, recent events and reports', name='description')
@@ -48,7 +48,7 @@ html(lang='en')
         .page-header-inner
           // BEGIN LOGO
           .page-logo
-            a(href='index.html')
+            a(href='/')
               img.logo-default(src='../assets/layouts/layout/img/logo.png', alt='logo')
             .menu-toggler.sidebar-toggler
               span
@@ -62,7 +62,7 @@ html(lang='en')
             ul.nav.navbar-nav.pull-right
               li.dropdown.dropdown-user
                 a.dropdown-toggle(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
-                  span.username.username-hide-on-mobile  Barış Velioğlu
+                  span.username.username-hide-on-mobile  Yönetici
                   i.fa.fa-angle-down
                 ul.dropdown-menu.dropdown-menu-default
                   li
@@ -108,45 +108,28 @@ html(lang='en')
               li.nav-item
                 a.nav-link.nav-toggle(href='javascript:;')
                   i.icon-user
-                  span.title #{ __('master.CustomerFeatures') }
+                  span.title #{ __('master.Stores') }
                   span.arrow
-                ul.sub-menu
-                  li.nav-item
-                    a.nav-link(href='ui_colors.html')
-                      span.title #{ __('master.CustomerList') }
-                  li.nav-item
-                    a.nav-link(href='ui_metronic_grid.html')
-                      span.title #{ __('master.WalletBalance') }
               li.nav-item
                 a.nav-link.nav-toggle(href='javascript:;')
-                  i.icon-wallet
-                  span.title #{ __('master.CardFeatures') }
+                  i.icon-user
+                  span.title #{ __('master.Personals') }
                   span.arrow
-                ul.sub-menu
-                  li.nav-item
-                    a.nav-link(href='ui_colors.html')
-                      span.title #{ __('master.FormatCard') }
-                  li.nav-item
-                    a.nav-link(href='ui_metronic_grid.html')
-                      span.title #{ __('master.CreateRoomCard') }
               li.nav-item
                 a.nav-link.nav-toggle(href='javascript:;')
-                  i.icon-docs
-                  span.title #{ __('master.PersonalFeatures') }
+                  i.icon-user
+                  span.title #{ __('master.ProductTree') }
                   span.arrow
-                ul.sub-menu
-                  li.nav-item
-                    a.nav-link(href='ui_colors.html')
-                      span.title #{ __('master.PersonalList') }
               li.nav-item
                 a.nav-link.nav-toggle(href='javascript:;')
-                  i.icon-basket
-                  span.title #{ __('master.BarFeatures') }
+                  i.icon-user
+                  span.title #{ __('master.Inventory') }
                   span.arrow
-                ul.sub-menu
-                  li.nav-item
-                    a.nav-link(href='ui_colors.html')
-                      span.title #{ __('master.Products') }
+              li.nav-item
+                a.nav-link.nav-toggle(href='javascript:;')
+                  i.icon-user
+                  span.title #{ __('master.Sales') }
+                  span.arrow
             // END SIDEBAR MENU
             // END SIDEBAR MENU
           // END SIDEBAR

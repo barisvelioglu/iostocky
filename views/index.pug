@@ -17,41 +17,23 @@ block content
   // END PAGE HEADER
   // BEGIN DASHBOARD STATS 1
   .row
-    .col-lg-3.col-md-3.col-sm-6.col-xs-12
+    .col-lg-6.col-md-6.col-sm-6.col-xs-12
       a.dashboard-stat.dashboard-stat-v2.blue(href='#')
         .visual
           i.fa.fa-comments
         .details
           .number
-            span(data-counter='counterup', data-value='1349') 0
-          .desc  New Feedbacks
-    .col-lg-3.col-md-3.col-sm-6.col-xs-12
+            span(data-counter='counterup', data-value='5') 0
+          .desc  #{__('index.DailyOrders')}
+    .col-lg-6.col-md-6.col-sm-6.col-xs-12
       a.dashboard-stat.dashboard-stat-v2.red(href='#')
         .visual
           i.fa.fa-bar-chart-o
         .details
           .number
-            span(data-counter='counterup', data-value='12,5') 0
-            | M$
-          .desc  Total Profit
-    .col-lg-3.col-md-3.col-sm-6.col-xs-12
-      a.dashboard-stat.dashboard-stat-v2.green(href='#')
-        .visual
-          i.fa.fa-shopping-cart
-        .details
-          .number
-            span(data-counter='counterup', data-value='549') 0
-          .desc  New Orders
-    .col-lg-3.col-md-3.col-sm-6.col-xs-12
-      a.dashboard-stat.dashboard-stat-v2.purple(href='#')
-        .visual
-          i.fa.fa-globe
-        .details
-          .number
-            | +
-            span(data-counter='counterup', data-value='89')
-            | %
-          .desc  Brand Popularity
+            span(data-counter='counterup', data-value='15000') 0
+            | #{__('index.TurkishLira')}
+          .desc  #{__('index.DailySales')}
   .clearfix
   // END DASHBOARD STATS 1
   .row
@@ -61,7 +43,7 @@ block content
         .portlet-title
           .caption
             i.icon-bar-chart.font-dark.hide
-            span.caption-subject.font-dark.bold.uppercase #{__('index.Visits')}
+            span.caption-subject.font-dark.bold.uppercase #{__('index.DailyOrders')}
         .portlet-body
           #site_statistics_loading
             img(src='../assets/global/img/loading.gif', alt='loading')
@@ -74,7 +56,7 @@ block content
         .portlet-title
           .caption
             i.icon-share.font-red-sunglo.hide
-            span.caption-subject.font-dark.bold.uppercase Revenue
+            span.caption-subject.font-dark.bold.uppercase #{__('index.MontlySales')}
         .portlet-body
           #site_activities_loading
             img(src='../assets/global/img/loading.gif', alt='loading')
