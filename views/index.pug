@@ -1,0 +1,84 @@
+extends layout
+
+block content
+  // BEGIN PAGE BAR
+  .page-bar
+    ul.page-breadcrumb
+      li
+        a(href='index.html') Home
+        i.fa.fa-circle
+      li
+        span Dashboard
+  // END PAGE BAR
+  // BEGIN PAGE TITLE
+  h1.page-title
+    | Admin Dashboard
+  // END PAGE TITLE
+  // END PAGE HEADER
+  // BEGIN DASHBOARD STATS 1
+  .row
+    .col-lg-3.col-md-3.col-sm-6.col-xs-12
+      a.dashboard-stat.dashboard-stat-v2.blue(href='#')
+        .visual
+          i.fa.fa-comments
+        .details
+          .number
+            span(data-counter='counterup', data-value='1349') 0
+          .desc  New Feedbacks
+    .col-lg-3.col-md-3.col-sm-6.col-xs-12
+      a.dashboard-stat.dashboard-stat-v2.red(href='#')
+        .visual
+          i.fa.fa-bar-chart-o
+        .details
+          .number
+            span(data-counter='counterup', data-value='12,5') 0
+            | M$
+          .desc  Total Profit
+    .col-lg-3.col-md-3.col-sm-6.col-xs-12
+      a.dashboard-stat.dashboard-stat-v2.green(href='#')
+        .visual
+          i.fa.fa-shopping-cart
+        .details
+          .number
+            span(data-counter='counterup', data-value='549') 0
+          .desc  New Orders
+    .col-lg-3.col-md-3.col-sm-6.col-xs-12
+      a.dashboard-stat.dashboard-stat-v2.purple(href='#')
+        .visual
+          i.fa.fa-globe
+        .details
+          .number
+            | +
+            span(data-counter='counterup', data-value='89')
+            | %
+          .desc  Brand Popularity
+  .clearfix
+  // END DASHBOARD STATS 1
+  .row
+    .col-lg-6.col-xs-12.col-sm-12
+      // BEGIN PORTLET
+      .portlet.light.bordered
+        .portlet-title
+          .caption
+            i.icon-bar-chart.font-dark.hide
+            span.caption-subject.font-dark.bold.uppercase #{__('index.Visits')}
+        .portlet-body
+          #site_statistics_loading
+            img(src='../assets/global/img/loading.gif', alt='loading')
+          #site_statistics_content.display-none
+            #site_statistics.chart
+      // END PORTLET
+    .col-lg-6.col-xs-12.col-sm-12
+      // BEGIN PORTLET
+      .portlet.light.bordered
+        .portlet-title
+          .caption
+            i.icon-share.font-red-sunglo.hide
+            span.caption-subject.font-dark.bold.uppercase Revenue
+        .portlet-body
+          #site_activities_loading
+            img(src='../assets/global/img/loading.gif', alt='loading')
+          #site_activities_content.display-none
+            #site_activities(style='height: 228px;')
+
+      // END PORTLET
